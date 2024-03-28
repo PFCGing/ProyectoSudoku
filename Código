@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+	
+	int op;
+	do{
+	
+//	system ("COLOR F0" );
+	printf("\n\t MENU \n");
+	printf("\n\t\t1.Adminstrador.\n\t\t2.Cliente\n\t\t3.Contactar Programadores\n\t\t4.Salir\n\t\t\tIngrese la opcion deseada: ");
+	scanf("%i", &op);
+		switch(op){
+			case 1: 
+			
+			break;
+			case 2: 
+			
+			break; 
+			case 3: 
+			
+			break; 
+			case 4: 
+				system("CLS");
+				printf("\n\n\t\t\tGRACIAS POR PREFERIRNOS!!!!\n\n");
+				exit(1);		
+			break; 
+			default: 
+			 printf("\n\t\tOpcion invalida...\n\n");
+			 system("PAUSE");
+			 system("CLS");
+		}
+	}while(1);
+
+	return 0;
+}
