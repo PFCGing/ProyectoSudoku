@@ -1,15 +1,17 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int main(){
-	
+void menu(){
 	int op;
 	do{
-	
-//	system ("COLOR F0" );
 	printf("\n\t MENU \n");
-	printf("\n\t\t1.Adminstrador.\n\t\t2.Cliente\n\t\t3.Contactar Programadores\n\t\t4.Salir\n\t\t\tIngrese la opcion deseada: ");
-	scanf("%i", &op);
+	printf("\n\t\t1) Estado actual del juego."
+		"\n\t\t2) Ingresar un valor a una casilla."
+		"\n\t\t3) Estado inicial del juego."
+		"\n\t\t4) Cambiar un valor a una casilla."
+		"\n\t\t5) Borrar un valor."
+		"\n\t\t\tIngrese la opcion deseada: ");
+	scanf("%d", &op);
 		switch(op){
 			case 1: 
 			
@@ -21,16 +23,23 @@ int main(){
 			
 			break; 
 			case 4: 
-				system("CLS");
-				printf("\n\n\t\t\tGRACIAS POR PREFERIRNOS!!!!\n\n");
-				exit(1);		
+
+			break; 
+			case 5: 
+		
 			break; 
 			default: 
 			 printf("\n\t\tOpcion invalida...\n\n");
-			 system("PAUSE");
-			 system("CLS");
+			break;
 		}
 	}while(1);
 
+
+}
+
+
+int main(){
+	
+	
 	return 0;
 }
